@@ -4,12 +4,14 @@
 }
 
 body{
+    display: flex;
+    justify-content: space-around;
     background-image: linear-gradient(to right, rgba(95, 95, 95, 1), rgba(134, 165, 195, 1), rgba(0, 163, 255, 1));
 }
 
-#container {
+.container {
     width: 100%;
-    max-width: 450px;
+    max-width: 650px;
     margin: 100px auto;
     padding-top: 40px;
     border: 1px solid black;
@@ -19,16 +21,16 @@ body{
     font-size: 17px;
 }
 
-#container form #profile {
+.container form #profile {
     height: 140px;
     margin-bottom: 30px;
 }
 
-#container form #profile img, p {
+.container form #profile img, p {
     transition: 0.8s;
 }
 
-#container form #inputs input {
+.container form #inputs input {
     width: 280px;
     height: 35px;
     transition: 1s;
@@ -39,7 +41,7 @@ body{
     background-color: rgba(240, 247, 251, 0.12);
 }
 
-#container form #inputs #class_number {
+.container form #inputs #class_number {
     width: 330px;
     margin: auto;
     margin-top: 10px;
@@ -48,11 +50,11 @@ body{
     justify-content: space-evenly;
 }
 
-#container form #inputs #class_number input {
+.container form #inputs #class_number input {
     width: 120px;
 }
 
-#container form #inputs button {
+.container form #inputs button {
     color: white;
     width: 305px;
     height: 38px;
@@ -64,7 +66,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
 }
 
-#container #bottons {
+.container #bottons {
     width: 40%;
     margin: auto;
     /* background-color: aqua; */
@@ -72,7 +74,7 @@ body{
     justify-content: space-around;
 }
 
-#container #bottons a img {
+.container #bottons a img {
     width: 40px;
     margin-top: 50px;
     /* background-color: bisque; */
@@ -81,18 +83,32 @@ body{
 /*===================================================================================
                                     EVENTOS
 ===================================================================================*/
-#container #profile:hover img {
+.container #profile:hover img {
     scale: 1.1;
 }
 
-#container #profile:hover p {
+.container #profile:hover p {
     color: white;
     font-size: 19px;
 }
 
-#container form #inputs 
+.container form #inputs 
 #name:focus, #class_number #class:focus, #class_number #number:focus {
     padding-left: 15px;
     color: white;
     font-size: 17px;
+}
+
+.container .ul {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 19px;
+    font-style: italic;
+    background-color: aqua;
+}
+
+.container .ul li {
+    margin-bottom: 15px;
+    list-style: none;
+    font-size: 22px;
 }

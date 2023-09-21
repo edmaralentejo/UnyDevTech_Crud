@@ -7,24 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <form action="">
+    <div class="container">
+        <form action="#">
             <div id="profile">
                 <img src="./img/avatar-light.png" alt="">
                 <p id="name_user">@User Name</p>
             </div>
 
             <div id="inputs">
-                <input type="text" name="" id="name" placeholder="Your Full Name">
+                <input type="text" name="" id="name" placeholder="Your Full Name" required>
                 <div id="class_number">
-                    <input type="text" name="" id="class" placeholder="Your Class">
-                    <input type="number" name="" id="number" placeholder="Your Number">
+                    <input type="text" name="" id="class" placeholder="Your Class" required>
+                    <input type="number" name="" id="number" placeholder="Your Number" required>
                 </div>
-                <button type="submit">CADASTRAR</button>
+                <button id="cadastrar" onclick='adicionarAluno()'>CADASTRAR</button>
             </div>
         </form>
-
-        <div id="bottons">
+        <!-- <div id="bottons">
             <a href="#">
                 <img src="img/edit_80px.png" alt="Edit Student Registration">
             </a>
@@ -32,7 +31,23 @@
             <a href="#">
                 <img src="img/remove_80px.png" alt="Remove Student Registration">
             </a>
+        </div> -->
+    </div>
+
+    <div class="container">
+        <h1>Lista de Alunos</h1>
+        <div>
+            <ul class="ul">
+                <li>N_Proc</li>
+                <li>Nome</li>
+                <li>Turma</li>
+                <li>Número</li>
+            </ul>
+            <label for="" id="alert"></label>
+            <ul id="list-container"></ul>
         </div>
     </div>
+
+    <script src="scrpt.js"></script>
 </body>
 </html>
