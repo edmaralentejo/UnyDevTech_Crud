@@ -1,0 +1,35 @@
+* {
+    outline: none;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, rgba(95, 95, 95, 1), rgba(134, 165, 195, 1), rgba(0, 163, 255, 1));
+}
+
+.container {
+    width: 100%;
+    max-width: 1450px;
+    margin-right: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    padding-top: 40px;
+    border: 1px solid black;
+    height: 450px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 17px;
+}
+/*===================================================================================
+                                    EVENTOS
+===================================================================================*/
+
+.container .ul {
+    display: flex;
+    font-size: 19px;
+    font-style: italic;
+    justify-content: space-around;
+    list-style: none;
+}

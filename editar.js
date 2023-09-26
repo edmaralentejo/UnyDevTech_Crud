@@ -25,3 +25,22 @@
     function sauvaAlunoCadastrado() {
         localStorage.setItem('dados-aluno', JSON.stringify(lista))
     }
+
+    function validar() {
+
+        tname = document.querySelector("#name").value.length
+        tclass = document.querySelector("#class").value.length
+        tnumber = document.querySelector("#number").value.length
+
+        if(tname == 0 || tclass == 0 || tnumber == 0){
+            alert('POR FAVOR PREENCHA OS CAMPOS VAZIOS!')
+        }else{
+            editarAlunoCadastrado()
+            
+        }
+
+    }
+
+    document.getElementById("editarCadastro").addEventListener('click',()=> {
+        validar()
+    })

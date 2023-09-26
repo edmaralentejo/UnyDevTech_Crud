@@ -15,7 +15,7 @@ body{
     margin: 100px auto;
     padding-top: 40px;
     border: 1px solid black;
-    height: 450px;
+    height: 550px;
     text-align: center;
     border-radius: 20px;
     font-size: 17px;
@@ -31,8 +31,8 @@ body{
 }
 
 .container form #inputs input {
-    width: 280px;
-    height: 35px;
+    width: 380px;
+    height: 40px;
     transition: 1s;
     font-size: 17px;
     padding-left: 5px;
@@ -42,16 +42,30 @@ body{
 }
 
 .container form #inputs #class_number {
-    width: 330px;
+    width: 390px;
+    /* background-color: aqua; */
     margin: auto;
     margin-top: 10px;
-    margin-bottom: 25px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .container form #inputs #class_number input {
-    width: 120px;
+    width: 175px;
+}
+
+.container form #inputs #notas {
+    width: 390px;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+
+.container form #inputs #notas input{
+    width: 110px;
+
 }
 
 .container form #inputs button {
@@ -93,7 +107,13 @@ body{
 }
 
 .container form #inputs 
-#name:focus, #class_number #class:focus, #class_number #number:focus {
+#name:focus, 
+#class_number #class:focus, 
+#class_number #number:focus,
+#notas #nota1:focus,
+#notas #nota2:focus,
+#notas #nota3:focus
+{
     padding-left: 15px;
     color: white;
     font-size: 17px;
@@ -101,14 +121,25 @@ body{
 
 .container .ul {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 60px;
     font-size: 19px;
     font-style: italic;
-    background-color: aqua;
+    justify-content: start;
 }
 
-.container .ul li {
+.container ul li {
     margin-bottom: 15px;
     list-style: none;
     font-size: 22px;
+    flex-direction: row;
+}
+
+#list-container ul li {
+    margin-bottom: 15px;
+    list-style: none;
+    font-size: 22px;
+    flex-direction: row;
+    gap: 20px;
+    background-color: aqua;
 }

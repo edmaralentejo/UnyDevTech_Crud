@@ -15,23 +15,22 @@
             </div>
 
             <div id="inputs">
-                <input type="text" name="" id="name" placeholder="Your Full Name" required>
+                <input type="text" name="" id="name" placeholder="Your Full Name">
                 <div id="class_number">
-                    <input type="text" name="" id="class" placeholder="Your Class" required>
-                    <input type="number" name="" id="number" placeholder="Your Number" required>
+                    <input type="text" name="" id="class" placeholder="Your Class">
+                    <input type="number" name="" id="number" placeholder="Your Number">
                 </div>
-                <button id="cadastrar" onclick='adicionarAluno()'>CADASTRAR</button>
+                <!-- <label for="">Your Points</label> -->
+                <div id="notas">
+                    <input type="number" name="" id="nota1" placeholder="Nota 1">
+                    <input type="number" name="" id="nota2" placeholder="Nota 2">
+                    <input type="number" name="" id="nota3" placeholder="Nota 3">
+                </div>
+
+                <button id="cadastrar">CADASTRAR</button> <br>
+                <a href="lista.html">LISTA DE ALUNOS</a>
             </div>
         </form>
-        <!-- <div id="bottons">
-            <a href="#">
-                <img src="img/edit_80px.png" alt="Edit Student Registration">
-            </a>
-
-            <a href="#">
-                <img src="img/remove_80px.png" alt="Remove Student Registration">
-            </a>
-        </div> -->
     </div>
 
     <div class="container">
@@ -43,7 +42,6 @@
                 <li>Turma</li>
                 <li>Número</li>
             </ul>
-            <label for="" id="alert"></label>
             <ul id="list-container"></ul>
         </div>
     </div>
